@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+main::before {
+  content: '';
+  position: fixed;
+  background:linear-gradient(#00000055, #00000055), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg) center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+#title {
+  text-align: center;
+  color: #fff;
+  padding: 30px 0 10px;
+}
+#description {
+  text-align: center;
+  color: #eee;
+  padding:0 0 30px;
+}
+#survey-form {
+  width: 700px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #282846;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+label, input {
+  display: block;
+}
+label {
+  padding: 5px;
+  color: #eee;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+input[name="recommend"],
+label[for="recommend"]{
+  display: inline-block;
+  width: fit-content;
+}
+form p {
+  color: #fff;
+  margin-top: 25px;
+}
+#dropdown {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 ;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+input[type="checkbox"], 
+input[type="checkbox"] + label{
+  display: inline-block;
+  width: fit-content;
+}
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+#submit {
+  background-color: #30be68;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
